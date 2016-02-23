@@ -62,8 +62,7 @@ void findFragments(std::string fullPath)
     {
       return;
     }
-    searchPath = std::string(searchPath.substr(position));
-    searchPath = std::string(searchPath.substr(fragments[i].length()));
+    searchPath = std::string(searchPath.substr(position + fragments[i].length()));
   }
   std::cout << fullPath << "\n";
 }
